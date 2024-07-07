@@ -87,12 +87,12 @@ NodeParam: &NodeParam {type: http, interval: 3600, health-check: {enable: true, 
 
 # 锚点 - 节点订阅
 proxy-providers: 
-  WD:
-    url: 'https://api.wd-red.com/sub?target=clash&emoji=true&udp=true&scv=true&new_name=true&filename=WD_Trojan&url=https%3A%2F%2Fwd-red.com%2Fsubscribe%2Fkryqry-scf990e4'
+  Banli:
+    url: 'http://47.243.161.149/link/T12NqdKswWjqsq9O?clash=2'
     <<: *NodeParam
     path: './proxy_provider/WD.yaml'
     override:
-      additional-prefix: "[WD] " # 为订阅节点添加机场名称前缀
+      additional-prefix: "[Banli] " # 为订阅节点添加机场名称前缀
   Yushe:
     url: 'https://sub.cucloud.top/api/v1/client/subscribe?token=ba7cf357b14f8a6863c4c3ede5128186'
     <<: *NodeParam
